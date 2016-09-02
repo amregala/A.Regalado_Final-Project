@@ -1,0 +1,416 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/***** LOOK INTO THIS 
+.clearfix {
+	overflow: auto;
+}*****/
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/**********************************
+*********
+	GENERAL LAYOUT//SHARED STYLES
+*********
+***********************************/
+body {
+	margin: 0 auto;
+	width: 100%;
+	background: black;
+}
+header {
+	border-bottom: 5px solid rgba(0, 106, 187,1);
+	background: rgba(227, 194, 12, 1);
+	height: 110px;
+	width: 100%;
+	position: fixed;
+}
+.page.title {
+	color: black;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	line-height: 30px;
+	padding-top: 4px;
+	padding-left: 10px;
+	width: 15%;
+	margin-left: 5%
+}
+
+nav {
+	float: left;
+	width: 45%;
+	margin-top:50px;
+}
+header nav ul li {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+header nav ul li a {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+header nav li a:hover {
+	background-color: rgb(59, 59, 59);
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(59, 59, 59);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color:rgba( 0, 106, 187, 1);
+}
+
+
+.show {display:block;}
+
+
+.div-wrapper {
+	float: left;
+	width :35%;
+	margin-left: 5%;
+	
+
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	color: white;
+	width: 100%;
+	height: 30px;
+	background-color: rgba( 0, 106, 187, 1);
+	margin: auto;
+	
+	;
+}
+
+p {
+	width: 100%;
+	background-color: rgba(140, 140, 140, 0.25);
+	color: white;
+	font-family: 'Slabo 27px', serif;
+	font-size: 14px;
+	padding: 15px;
+}
+
+.btn-see-more {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+  	border-radius: 5px;
+  	font-weight: 800;
+	width: 30%;
+
+}
+.btn-see-more a {
+	text-decoration: none;
+  	color: black;
+}
+
+
+
+.yellow {
+	color: black;
+  background: rgba(227, 194, 12, 1);
+ }
+
+
+/**********************************
+*********
+	FIRST CONTAINER LAYOUT: HANDMADE HABITAT // hh
+*********
+***********************************/
+.first-maker {
+	background: url(../img/HH_19.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 70%;
+	background-attachment: fixed;
+	clear: both;
+	height: 600px;
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	z-index: -1;
+}
+
+.div-wrapper.hh {
+	clear: both;
+	margin-top: -400px;
+}
+.hh a {
+	color: white;
+	text-decoration: none;
+}
+
+.hh a:hover {
+	color: rgb(59, 59, 59);
+
+}
+
+img.hh {
+	float:right;
+	border: 3px solid black;
+	margin-left: 5%;
+	margin-right: 20%;
+	margin-top: -355px;
+	width: 35%;
+}
+
+
+/**********************************
+*********
+	SECOND CONTAINER LAYOUT: TYPECASE INDUSTRIES // tc
+*********
+***********************************/
+.second-maker {
+	background: url(../img/tc_18.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 110%;
+	background-attachment: fixed;
+	clear: both;
+	height: 400px;
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	z-index: -1;
+	border-top: 5px solid rgba(227, 194, 12, 1);
+	
+}
+
+.div-wrapper.tc {
+	clear:both;
+	float: right;
+	margin-right: 15%;
+	margin-top: -230px;
+}
+
+img.tc {
+	border: 3px solid black;
+	margin-left: 5%;
+	margin-top: -340px;
+	width: 40%;
+}
+
+.tc a {
+	color: white;
+	text-decoration: none;
+}
+
+.tc a:hover {
+	color: rgb(59, 59, 59);
+
+}
+
+/**********************************
+*********
+	THIRD CONTAINER LAYOUT: STITCH & RIVET // sr
+*********
+***********************************/
+.third-maker {
+	background: url(../img/sr_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 50%;
+	background-attachment: fixed;
+	clear: both;
+	height: 400px;
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	z-index: -1;
+	border-top: 5px solid rgba(227, 194, 12, 1);
+}
+
+.div-wrapper.sr {
+	margin-top: -260px;
+}
+img.sr {
+	clear: both;	
+	float:right;	
+	margin-right: 20%;
+	border: 3px solid black;
+	margin-left: 5%;
+	margin-top: -220px;
+	width: 35%;
+}
+.sr a {
+	color: white;
+	text-decoration: none;
+}
+
+.sr a:hover {
+	color: rgb(59, 59, 59);
+
+}
+
+
+
+
+/**********************************
+*********
+	FOURTH CONTAINER LAYOUT: SHARLAINE ANAPU // sa
+*********
+***********************************/
+.fourth-maker {
+	background: url(../img/sa_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 50%;
+	background-attachment: fixed;
+	clear: both;
+	height: 400px;
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	z-index: -1;
+	border-top: 5px solid rgba(227, 194, 12, 1);
+}
+.div-wrapper.sa {
+	clear:both;
+	float: right;
+	margin-right: 27%;
+	margin-top: -260px;
+}
+
+img.sa {
+	border: 3px solid black;
+	margin-left: 5%;
+	margin-top: -280px;
+	width: 27%;
+}
+.sa a {
+	color: white;
+	text-decoration: none;
+}
+
+.sa a:hover {
+	color: rgb(59, 59, 59);
+
+}
+
+
+
+/**********************************
+*********
+	FIFTH CONTAINER LAYOUT: PRINTED WILD // pw
+*********
+***********************************/
+.fifth-maker {
+	background: url(../img/pw_2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 110%;
+	background-attachment: fixed;
+	clear: both;
+	height: 400px;
+	position: relative;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 56%, 0 22%);
+	z-index: -1;
+	border-top: 5px solid rgba(227, 194, 12, 1);
+}
+
+.div-wrapper.pw {
+	clear: both;
+	margin-top: -280px;
+}
+
+img.pw {
+	clear: both;
+	float: right;
+	border: 3px solid black;
+	margin-left: 5%;
+	margin-right: 25%;
+	margin-top: -240px;
+	width: 30%;
+}
+.pw a {
+	color: white;
+	text-decoration: none;
+}
+
+.pw a:hover {
+	color: rgb(59, 59, 59);
+
+}
+
+
+
+
+/******** Media Queries************/
+
+@media screen and (max-width: 480px){
+
+  nav{
+    background: rgba(0,0,0,0.5);
+    float: right;
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+  
+header nav ul li {
+  background: rgba(0,0,0,0.5);
+  display: block;
+  text-align: right;
+}
+
+header nav ul li a {
+  background: rgba(0,0,0,0.5);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+

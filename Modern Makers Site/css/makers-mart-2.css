@@ -1,0 +1,260 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/***************
+/***** LAYOUT
+/***************/
+
+body {
+  margin: auto;
+  background-color: black;
+}
+
+header {
+  border-bottom: 5px solid rgba(0, 106, 187, 1);
+  background: rgba(227, 194, 12, 1);
+  height: 110px;
+  width: 100%;
+  position: fixed;
+ }
+
+
+.page.title {
+  color: black;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  line-height: 30px;
+  padding-top: 4px;
+  padding-left: 10px;
+  width: 15%;
+  margin-left: 5%;
+}
+
+nav {
+  float: left;
+  width: 45%;
+  margin-top: 50px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+header nav ul li a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+
+
+
+.carousel-container, .carousel-item {
+  clear: both;
+  height: 550px;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+
+}
+
+.carousel-item-1 {
+  background: url(../img/makers-mart-imgs/mart-1.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-2 {
+  background: url(../img/makers-mart-imgs/mart-2.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-3 {
+  background: url(../img/makers-mart-imgs/mart-3.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-4 {
+  background: url(../img/makers-mart-imgs/mart-4.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-5 {
+  background: url(../img/makers-mart-imgs/mart-5.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-6 {
+  background: url(../img/makers-mart-imgs/mart-6.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-7 {
+  background: url(../img/makers-mart-imgs/mart-7.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-8 {
+  background: url(../img/makers-mart-imgs/mart-8.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-9 {
+  background: url(../img/makers-mart-imgs/mart-9.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-10 {
+  background: url(../img/makers-mart-imgs/mart-10.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-11 {
+  background: url(../img/makers-mart-imgs/mart-11.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item-12 {
+  background: url(../img/makers-mart-imgs/mart-12.jpg) center center;
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.43);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  margin-top: 250px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: rgba(255, 255, 255, 0.43); 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  margin-top: -60px;
+  text-align: center;
+  text-transform: capitalize;
+}
+h4 {
+  color: rgba(255, 255, 255, 0.43);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  margin-top: -40px;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+.descrip-box {
+  clear: both;
+  float: left;
+  width: 45%;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-bottom: 35px;
+}
+
+.makers-title {
+  background-color: rgba( 0, 106, 187, 1);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 55px;
+}
+
+
+p {
+  background-color: rgba(140, 140, 140, 0.25);
+  color: white;
+  font-family: 'Slabo 27px', serif;
+  font-size: 16px;
+  line-height: 25px;
+  margin: auto;
+  padding: 15px;
+  border-right: 2px solid white;
+}
+
+.apply-btn {
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 4px 15px;
+  width: 20%;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 170px;
+
+}
+
+.apply-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.yellow {
+  background: #f9e42e;
+  
+}
+
+
+/******** Media Queries************/
+
+@media screen and (max-width: 480px){
+
+  nav{
+    background: rgba(0,0,0,0.5);
+    float: right;
+    display: block;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+  
+header nav ul li {
+  background: rgba(0,0,0,0.5);
+  display: block;
+  text-align: right;
+}
+
+header nav ul li a {
+  background: rgba(0,0,0,0.5);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+
+
